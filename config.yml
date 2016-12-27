@@ -1,12 +1,12 @@
 #Default config by tristanhonor
 plugin:
-  version: 1.1
+  version: 1.5.1
 
 stats:
   playercount: 0
 
 motd:
-  message: '&cHello, &chow are you?'
+  message: '&cHello, &cwelcome to the server'
   
 message:
   join: '&8[&2+&8]&7 %player% joined the server'
