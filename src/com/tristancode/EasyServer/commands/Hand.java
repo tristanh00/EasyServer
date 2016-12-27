@@ -1,4 +1,4 @@
-package commands;
+package com.tristancode.EasyServer.commands;
 
 import com.tristancode.EasyServer.EasyServer;
 

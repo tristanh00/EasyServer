@@ -7,8 +7,8 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import commands.*;
-import events.*;
+import com.tristancode.EasyServer.commands.*
+import com.tristancode.EasyServer.events.*
 
 public class EasyServer extends JavaPlugin implements Listener {	
 	public PluginDescriptionFile pyml = this.getDescription();

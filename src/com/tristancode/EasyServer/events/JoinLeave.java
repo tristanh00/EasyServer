@@ -1,4 +1,4 @@
-package events;
+package com.tristancode.EasyServer.events;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
