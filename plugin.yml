@@ -1,11 +1,12 @@
 name: EasyServer
-version: 1.5
-author: TristanCode
+version: 1.5.1
+author: tristanhonor
 main: com.tristancode.EasyServer.EasyServer
+
 commands:
    es:
     permission: es.admin
-    description: EasyServer Main Command
+    description: EasyServer main command
     
    hand:
     permission: es.hand

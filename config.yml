@@ -1,4 +1,4 @@
-#Default Config by TristanCode
+#Default config by tristanhonor
 plugin:
   version: 1.1
 
@@ -9,6 +9,6 @@ motd:
   message: '&cHello, &chow are you?'
   
 message:
-  join: '&8[&2+&8]&7 %player% joined the game' 
-  quit: '&8[&4-&8]&7 %player% left the game'
+  join: '&8[&2+&8]&7 %player% joined the server'
+  quit: '&8[&4-&8]&7 %player% left the server'
   welcome: '&eWelcome %player% to the server!'

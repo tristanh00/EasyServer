@@ -13,7 +13,7 @@ import events.*;
 public class EasyServer extends JavaPlugin implements Listener {	
 	public PluginDescriptionFile pyml = this.getDescription();
 	
-  //On Server Start	
+  	//On Server Start
 	public void onEnable() {
 		ConsoleCommandSender logger = this.getServer().getConsoleSender();
 
@@ -32,10 +32,9 @@ public class EasyServer extends JavaPlugin implements Listener {
 		this.getCommand("hand").setExecutor(new Hand(this));
 
 
-
 	}
 	
-  //On Server Stop
+  	//On Server Stop
 	public void onDisable() {
 		ConsoleCommandSender logger = this.getServer().getConsoleSender();
 
