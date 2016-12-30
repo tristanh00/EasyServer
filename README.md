@@ -36,7 +36,8 @@ Permission: es.hand
 3. Reload/Restart the server.
 
 ### Licence
-```This is free and unencumbered software released into the public domain.
+```
+This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
@@ -59,4 +60,5 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <http://unlicense.org>```
+For more information, please refer to <http://unlicense.org>
+```
