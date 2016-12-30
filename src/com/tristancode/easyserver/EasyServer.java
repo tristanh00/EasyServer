@@ -6,7 +6,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import com.tristancode.easyserver.commands.*;
 import com.tristancode.easyserver.events.*;
 

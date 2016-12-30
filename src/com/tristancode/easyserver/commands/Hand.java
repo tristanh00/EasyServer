@@ -1,7 +1,6 @@
 package com.tristancode.easyserver.commands;
 
 import com.tristancode.easyserver.EasyServer;
-
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
