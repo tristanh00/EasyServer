@@ -32,7 +32,6 @@ public class JoinLeave implements Listener {
 		join.setJoinMessage(JoinM);
 	}
 
-	 
 	@EventHandler
 	public void onPlayerQuit(PlayerQuitEvent leave) {
 		String player = leave.getPlayer().getName();

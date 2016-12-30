@@ -20,7 +20,7 @@ public class AdminCommands implements CommandExecutor {
 
 		if(p.hasPermission("es.admin")) {
 		if(args.length < 1) {
-			p.sendMessage("§r[§6EasyServer§r] §cby TristanCode");
+			p.sendMessage("§r[§6EasyServer§r] §cby tristancode");
 			p.sendMessage("§a/es motd §7Display current MOTD");
 			p.sendMessage("§a/es setmotd §7Et current MOTD");
 			p.sendMessage("§a/es jq §7Display the join/quit message");
@@ -37,7 +37,7 @@ public class AdminCommands implements CommandExecutor {
 		}
 		
 		if(args[0].equalsIgnoreCase("motd")) {
-			p.sendMessage("§7MOTD : " + this.pl.getConfig().getString("motd.message").replaceAll("&", "§"));
+			p.sendMessage("§7Motd : " + this.pl.getConfig().getString("motd.message").replaceAll("&", "§"));
 		}
 		if(args[0].equalsIgnoreCase("welcome")) {
 			p.sendMessage("§7Welcome : §c" + this.pl.getConfig().getString("message.welcome").replaceAll("&", "§"));
@@ -63,7 +63,7 @@ public class AdminCommands implements CommandExecutor {
 				     }
 				}
 				if(newMOTD == "") {
-					p.sendMessage("§7Current MOTD : " + this.pl.getConfig().getString("motd.message").replaceAll("&", "§"));
+					p.sendMessage("§7Current Motd : " + this.pl.getConfig().getString("motd.message").replaceAll("&", "§"));
 					p.sendMessage("§cPlease do /es setmotd <motd> to change the current MOTD.");
 				} else {
 					newMOTD = newMOTD.replaceAll("&", "§");
@@ -88,6 +88,7 @@ public class AdminCommands implements CommandExecutor {
 				if(newJoin == "") {
 					p.sendMessage("§7Current Join Message : " + this.pl.getConfig().getString("message.join").replaceAll("&", "§"));
 					p.sendMessage("§cPlease do /es setjoin <message> to change the join message.");
+
 				} else {
 					newJoin = newJoin.replaceAll("&", "§");
 					p.sendMessage("§7New Join Message: "+ ChatColor.RESET + newJoin);

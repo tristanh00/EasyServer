@@ -11,7 +11,7 @@ import com.tristancode.easyserver.commands.*;
 import com.tristancode.easyserver.events.*;
 
 public class EasyServer extends JavaPlugin implements Listener {
-	public PluginDescriptionFile pyml = this.getDescription();
+	public PluginDescriptionFile config = this.getDescription();
 	
   	//On Server Start
 	@Override
@@ -19,14 +19,14 @@ public class EasyServer extends JavaPlugin implements Listener {
 		ConsoleCommandSender logger = this.getServer().getConsoleSender();
 
 		logger.sendMessage(ChatColor.RED + "---------------------------------------");
-		logger.sendMessage(ChatColor.GREEN + "["+pyml.getName()+"] has been enabled!");
+		logger.sendMessage(ChatColor.GREEN + "["+config.getName()+"] has been enabled!");
 		logger.sendMessage(ChatColor.RED + "---------------------------------------");
 		
 		//Get configuration file
 		this.saveDefaultConfig();
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new JoinLeave(this), this);
-		pm.registerEvents(new MOTD(this), this);
+		pm.registerEvents(new Motd(this), this);
 
 
 		this.getCommand("es").setExecutor(new AdminCommands(this));
@@ -41,7 +41,7 @@ public class EasyServer extends JavaPlugin implements Listener {
 		ConsoleCommandSender logger = this.getServer().getConsoleSender();
 
 		logger.sendMessage(ChatColor.RED + "---------------------------------------");
-		logger.sendMessage(ChatColor.GREEN + "["+pyml.getName()+"] has been disabled!");
+		logger.sendMessage(ChatColor.GREEN + "["+config.getName()+"] has been disabled!");
 		logger.sendMessage(ChatColor.RED + "---------------------------------------");
 	}
 	

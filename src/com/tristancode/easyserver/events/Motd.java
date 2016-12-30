@@ -5,10 +5,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerListPingEvent;
 import com.tristancode.easyserver.EasyServer;
 
-public class MOTD implements Listener {
+public class Motd implements Listener {
 	private EasyServer pl;
 
-	public MOTD(EasyServer pl) {
+	public Motd(EasyServer pl) {
 		this.pl = pl;
 	}
 	

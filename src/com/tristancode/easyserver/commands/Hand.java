@@ -15,6 +15,7 @@ public class Hand implements CommandExecutor {
 	public Hand(EasyServer pl) {
 	//	this.pl = pl;
 	}
+
 	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String cmdN, String[] args) {
 		Player p = (Player) sender;
@@ -30,7 +31,7 @@ public class Hand implements CommandExecutor {
 		if(p instanceof Player) {
 			if(args.length < 1) {
 				p.sendMessage("§aItem Name : §7" + p.getItemInHand().getType());
-				p.sendMessage("§aItem ID in your hand : §7" + stringBuilder.toString());
+				p.sendMessage("§aItem ID   : §7" + stringBuilder.toString());
 			}		
 		}
 		return false;
