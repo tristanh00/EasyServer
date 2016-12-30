@@ -1,6 +1,6 @@
-package com.tristancode.EasyServer.commands;
+package com.tristancode.easyserver.commands;
 
-import com.tristancode.EasyServer.EasyServer;
+import com.tristancode.easyserver.EasyServer;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

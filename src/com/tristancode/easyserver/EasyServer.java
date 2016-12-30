@@ -1,4 +1,4 @@
-package com.tristancode.EasyServer;
+package com.tristancode.easyserver;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
@@ -7,13 +7,14 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.tristancode.EasyServer.commands.*
-import com.tristancode.EasyServer.events.*
+import com.tristancode.easyserver.commands.*;
+import com.tristancode.easyserver.events.*;
 
-public class EasyServer extends JavaPlugin implements Listener {	
+public class EasyServer extends JavaPlugin implements Listener {
 	public PluginDescriptionFile pyml = this.getDescription();
 	
   	//On Server Start
+	@Override
 	public void onEnable() {
 		ConsoleCommandSender logger = this.getServer().getConsoleSender();
 
@@ -25,9 +26,9 @@ public class EasyServer extends JavaPlugin implements Listener {
 		this.saveDefaultConfig();
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new JoinLeave(this), this);
-		pm.registerEvents(new MOTD(this), this);	
+		pm.registerEvents(new MOTD(this), this);
 
-		
+
 		this.getCommand("es").setExecutor(new AdminCommands(this));
 		this.getCommand("hand").setExecutor(new Hand(this));
 
@@ -35,6 +36,7 @@ public class EasyServer extends JavaPlugin implements Listener {
 	}
 	
   	//On Server Stop
+	@Override
 	public void onDisable() {
 		ConsoleCommandSender logger = this.getServer().getConsoleSender();
 

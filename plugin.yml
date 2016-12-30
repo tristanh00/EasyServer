@@ -1,7 +1,7 @@
 name: EasyServer
 version: 1.5.1
 author: tristanhonor
-main: com.tristancode.EasyServer.EasyServer
+main: com.tristancode.easyserver.EasyServer
 
 commands:
    es:

@@ -1,11 +1,11 @@
-package com.tristancode.EasyServer.events;
+package com.tristancode.easyserver.events;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import com.tristancode.EasyServer.EasyServer;
+import com.tristancode.easyserver.EasyServer;
 
 public class JoinLeave implements Listener {
 	private EasyServer pl;

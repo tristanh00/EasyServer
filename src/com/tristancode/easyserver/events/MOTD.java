@@ -1,9 +1,9 @@
-package com.tristancode.EasyServer.events;
+package com.tristancode.easyserver.events;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerListPingEvent;
-import com.tristancode.EasyServer.EasyServer;
+import com.tristancode.easyserver.EasyServer;
 
 public class MOTD implements Listener {
 	private EasyServer pl;
